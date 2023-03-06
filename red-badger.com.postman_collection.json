@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "9eb79605-f04e-4015-a648-bbd862357f86",
+		"name": "red-badger.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "311611"
+	},
+	"item": [
+		{
+			"name": "Robot Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"upperRight\": { \"x\": 5, \"y\": 3 },\n  \"commands\": [\n      {\n          \"origin\": {\n            \"coordinate\": { \"x\": 1, \"y\": 1 },\n            \"orientation\": \"E\"\n          },\n          \"instructions\": [\"R\", \"F\", \"R\", \"F\", \"R\", \"F\", \"R\", \"F\"]\n      },\n      {\n          \"origin\": {\n            \"coordinate\": { \"x\": 3, \"y\": 2 },\n            \"orientation\": \"N\"\n          },\n          \"instructions\": [\"F\", \"R\", \"R\", \"F\", \"L\", \"L\", \"F\", \"F\", \"R\", \"R\", \"F\", \"L\", \"L\"]\n          \n      },\n      {\n          \"origin\": {\n            \"coordinate\": { \"x\": 0, \"y\": 3 },\n            \"orientation\": \"W\"\n          },\n          \"instructions\": [\"L\", \"L\", \"F\", \"F\", \"F\", \"L\", \"F\", \"L\", \"F\", \"L\"]\n      }\n  ]\n}\n\n\n\n\n\n\n\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/robots",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"robots"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Provided sample data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"upperRight\": { \"x\": 5, \"y\": 3 },\n  \"commands\": [\n      {\n          \"origin\": {\n            \"coordinate\": { \"x\": 1, \"y\": 1 },\n            \"orientation\": \"E\"\n          },\n          \"instructions\": [\"R\", \"F\", \"R\", \"F\", \"R\", \"F\", \"R\", \"F\"]\n      },\n      {\n          \"origin\": {\n            \"coordinate\": { \"x\": 3, \"y\": 2 },\n            \"orientation\": \"N\"\n          },\n          \"instructions\": [\"F\", \"R\", \"R\", \"F\", \"L\", \"L\", \"F\", \"F\", \"R\", \"R\", \"F\", \"L\", \"L\"]\n          \n      },\n      {\n          \"origin\": {\n            \"coordinate\": { \"x\": 0, \"y\": 3 },\n            \"orientation\": \"W\"\n          },\n          \"instructions\": [\"L\", \"L\", \"F\", \"F\", \"F\", \"L\", \"F\", \"L\", \"F\", \"L\"]\n      }\n  ]\n}\n\n\n\n\n\n\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/robots",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"robots"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-0mJ5zn3Fip0i53zhowvyAqAYxTM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 10:14:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"1 1 E\",\n    \"3 3 N LOST\",\n    \"2 3 S\"\n]"
+				}
+			]
+		},
+		{
+			"name": "Health Check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Feb 2023 17:38:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "3"
+		}
+	]
+}
