@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server E2E tests Health Check E2E tests Expected response for Health Check 1`] = `"OK"`;
+
+exports[`Server E2E tests Robots E2E tests Expected results for provided sample data 1`] = `
+[
+  "1 1 E",
+  "3 3 N LOST",
+  "2 3 S",
+]
+`;
